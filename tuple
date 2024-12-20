@@ -1,0 +1,39 @@
+s=set()
+print('enter the number:')
+for i in range(5):
+    num=int(input())
+    s.add(num)
+    print(s)
+    num=int(input('enter the delete element:'))
+    if num in s:
+        s.remove(num)
+        print(s)
+    else:
+        print(num,'is not present:')
+
+
+
+
+excepted ouput
+enter the number:
+5
+{5}
+enter the delete element:2
+2 is not present:
+4
+{4, 5}
+enter the delete element:3
+3 is not present:
+4
+{4, 5}
+enter the delete element:3
+3 is not present:
+5
+{4, 5}
+enter the delete element:2
+2 is not present:
+3
+{3, 4, 5}
+enter the delete element:5
+{3, 4}
+
